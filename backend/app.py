@@ -381,6 +381,7 @@ def add_sample_data():
 # ==================== RUN APPLICATION ====================
 
 if __name__ == '__main__':
+   if __name__ == '__main__':
     print("\n" + "="*60)
     print("STUDENT MANAGEMENT SYSTEM BACKEND")
     print("="*60)
@@ -393,18 +394,14 @@ if __name__ == '__main__':
     
     print("\n📚 Available API Endpoints:")
     print("  [GET]  /api/students           - Get all students")
-    print("  [POST] /api/students           - Add new student")
-    print("  [GET]  /api/students/<id>      - Get single student")
-    print("  [PUT]  /api/students/<id>      - Update student")
-    print("  [DEL]  /api/students/<id>      - Delete student")
     print("  [GET]  /api/attendance         - Get today's attendance")
     print("  [POST] /api/attendance         - Mark attendance")
-    print("  [GET]  /api/attendance/<date>  - Get attendance by date")
-    print("  [GET]  /api/students/<id>/attendance - Student attendance")
+    print("  [GET]  /api/fees               - Get all fees")
     print("="*60 + "\n")
     
-    app.run(debug=True, port=5000)
-
+    # 🚨 IMPORTANT CHANGE: PORT FOR RENDER
+    port = int(os.environ.get("PORT", 10000))
+    app.run(host='0.0.0.0', port=port)
     # ==================== FEES MANAGEMENT ====================
 
 class Fees(db.Model):
