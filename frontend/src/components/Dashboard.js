@@ -26,7 +26,7 @@ ChartJS.register(
   LineElement
 );
 
-const API_URL = 'http://localhost:5000/api';
+const API_URL = 'https://studentmanagement-1-zjez.onrender.com/api';
 
 function Dashboard() {
   const [stats, setStats] = useState({
