@@ -33,7 +33,8 @@ function App() {
         {/* Footer */}
         <footer className="bg-white border-t border-gray-200 py-6">
           <div className="container mx-auto px-4 text-center text-gray-600">
-            <p>© 2024 Student Management System. All rights reserved.</p>
+            <p>© 2025 Student Management System. All rights reserved.</p>
+          <p> Build by Omji Awasthi
             <p className="mt-2 text-sm">
               Built with React, Flask, and SQLite | BCA Project
             </p>
