@@ -10,6 +10,8 @@ import Settings from './components/Settings';
 
 import './App.css';
 
+const API_URL = 'https://studentmanagement-1-zjez.onrender.com/api';
+
 function App() {
   return (
     <Router>
