@@ -10,6 +10,7 @@ import Settings from './components/Settings';
 
 import './App.css';
 
+// ✅ CORRECT: Sab imports ke baad, function se pehle
 const API_URL = 'https://studentmanagement-1-zjez.onrender.com/api';
 
 function App() {
